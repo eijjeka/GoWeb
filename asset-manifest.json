@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/goweb/static/css/main.dcd5bf62.css",
-    "main.js": "/goweb/static/js/main.c677b570.js",
+    "main.js": "/goweb/static/js/main.cace4438.js",
     "static/media/showcase@2x.jpg": "/goweb/static/media/showcase@2x.73c58f9aec29be2efd5a.jpg",
     "static/media/showcase.jpg": "/goweb/static/media/showcase.51cab55d982ce4bcedb5.jpg",
     "static/media/people@2x.jpg": "/goweb/static/media/people@2x.025e71c2eb8b92a53d5b.jpg",
@@ -56,10 +56,10 @@
     "static/media/warning.svg": "/goweb/static/media/warning.e0e344da4042aa31c966b699da04b62c.svg",
     "index.html": "/goweb/index.html",
     "main.dcd5bf62.css.map": "/goweb/static/css/main.dcd5bf62.css.map",
-    "main.c677b570.js.map": "/goweb/static/js/main.c677b570.js.map"
+    "main.cace4438.js.map": "/goweb/static/js/main.cace4438.js.map"
   },
   "entrypoints": [
     "static/css/main.dcd5bf62.css",
-    "static/js/main.c677b570.js"
+    "static/js/main.cace4438.js"
   ]
 }
