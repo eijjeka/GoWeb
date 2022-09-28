@@ -1,0 +1,95 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+
+  &Img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      height: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+  }
+
+  @media screen and (min-width: 1360px) {
+    min-width: 1360px;
+  }
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 79px 20px;
+  background: #28a745;
+
+  @media screen and (min-width: 768px) {
+    padding: 62px 32px;
+  }
+
+  &PreTitle {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: 1.38;
+    }
+  }
+
+  &Title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 41px;
+      line-height: 1.2;
+    }
+  }
+
+  &Text {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: 1.38;
+    }
+  }
+
+  &Button {
+    width: 146px;
+    height: 54px;
+    display: inline-block;
+    padding: 16px 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.37px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid #28a745;
+      background: #f4f4f4;
+      color: #28a745;
+    }
+  }
+}

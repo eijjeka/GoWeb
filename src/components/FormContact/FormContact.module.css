@@ -1,0 +1,80 @@
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__input {
+  padding: 16px 8px;
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+}
+
+.form__input:nth-of-type(1) {
+  margin-bottom: 16px;
+}
+
+.form__input:nth-of-type(2) {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1360px) {
+  .form__input:nth-of-type(2) {
+    margin-bottom: 40px;
+  }
+}
+
+.form__input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #808080;
+}
+
+.form__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #808080;
+}
+
+.form__input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #808080;
+}
+
+.form__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #808080;
+}
+
+.form__button {
+  width: 155px;
+  height: 57px;
+  padding: 16px 56px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.38;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #2ebf4f;
+  -webkit-transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__button:hover {
+  background: #28a745;
+}
+/*# sourceMappingURL=FormContact.module.css.map */

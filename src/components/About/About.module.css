@@ -1,0 +1,121 @@
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.aboutImg {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutImg {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1.1fr;
+        grid-template-columns: 1fr 1.1fr;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .about {
+    min-width: 1360px;
+  }
+}
+
+.meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 79px 20px;
+  background: #28a745;
+}
+
+@media screen and (min-width: 768px) {
+  .meta {
+    padding: 62px 32px;
+  }
+}
+
+.metaPreTitle {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .metaPreTitle {
+    font-size: 18px;
+    line-height: 1.38;
+  }
+}
+
+.metaTitle {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .metaTitle {
+    font-size: 41px;
+    line-height: 1.2;
+  }
+}
+
+.metaText {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .metaText {
+    font-size: 18px;
+    line-height: 1.38;
+  }
+}
+
+.metaButton {
+  width: 146px;
+  height: 57px;
+  display: inline-block;
+  padding: 16px 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.37px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.metaButton:hover, .metaButton:focus {
+  border: 1px solid #28a745;
+  background: #f4f4f4;
+  color: #28a745;
+}
+/*# sourceMappingURL=About.module.css.map */

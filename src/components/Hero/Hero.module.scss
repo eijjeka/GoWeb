@@ -1,0 +1,83 @@
+.hero {
+  padding-top: 160px;
+  padding-bottom: 104px;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/home/showcase.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../../images/home/showcase@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 378px;
+    padding-bottom: 378px;
+  }
+
+  &Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &Title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 55px;
+      line-height: 1.36;
+    }
+  }
+
+  &PreTitle {
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      font-size: 40px;
+      line-height: 1.2;
+    }
+  }
+
+  &Button {
+    display: flex;
+    cursor: pointer;
+    padding: 16px 32px;
+    background: #2ebf4f;
+    border-radius: 5px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background: #28a745;
+    }
+  }
+}
+
+.icon {
+  margin-right: 8px;
+}

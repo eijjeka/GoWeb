@@ -1,0 +1,45 @@
+.contact {
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    min-width: 1360px;
+    padding-bottom: 0;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f4f4f4;
+    padding: 51px 20px 25px 20px;
+
+    @media screen and (min-width: 768px) {
+      padding: 32px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 69px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.5;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 24px;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.35;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.cases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 56px;
+  padding-bottom: 40px;
+  color: #333333;
+}
+
+.cases__preTitle {
+  margin-bottom: 16px;
+}
+
+.cases__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 24px;
+}
+
+.cases__text {
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.cases__img {
+  display: block;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.cases__img:hover {
+  -webkit-transform: scale(1.03, 1.03);
+          transform: scale(1.03, 1.03);
+}
+
+.cases__list {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 8px;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .cases__list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cases__list {
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+  }
+}
+
+.cases__item {
+  overflow: hidden;
+}
+/*# sourceMappingURL=Cases.module.css.map */
