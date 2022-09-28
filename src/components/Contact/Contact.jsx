@@ -7,10 +7,10 @@ export const Contact = () => {
     <section className={s.contact} id="contact">
       <picture>
         <source
-          srcSet={`${imgExports.image.contactJpg}1x, ${imgExports.image.contactJpg2x} 2x`}
+          srcSet={`${imgExports.image.contactJpg} 1x, ${imgExports.image.contactJpg2x} 2x`}
         />
         <source
-          srcSet={`${imgExports.image.contactWebp}1x, ${imgExports.image.contactWebpp2x} 2x`}
+          srcSet={`${imgExports.image.contactWebp} 1x, ${imgExports.image.contactWebpp2x} 2x`}
         />
         <img
           className={s.contact__img}

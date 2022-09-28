@@ -19,10 +19,10 @@ export const Team = () => {
             <div className={s.team__card}>
               <picture>
                 <source
-                  srcSet={`${image.person1Jpg}1x, ${image.person1Jpg2x} 2x`}
+                  srcSet={`${image.person1Jpg} 1x, ${image.person1Jpg2x} 2x`}
                 />
                 <source
-                  srcSet={`${image.person1Webp}1x, ${image.person1Webp2x} 2x`}
+                  srcSet={`${image.person1Webp} 1x, ${image.person1Webp2x} 2x`}
                 />
                 <img
                   className={s.team__img}
@@ -103,10 +103,10 @@ export const Team = () => {
             <div className={s.team__card}>
               <picture>
                 <source
-                  srcSet={`${image.person2Jpg}1x, ${image.person2Jpg2x} 2x`}
+                  srcSet={`${image.person2Jpg} 1x, ${image.person2Jpg2x} 2x`}
                 />
                 <source
-                  srcSet={`${image.person2Webp}1x, ${image.person2Webp2x} 2x`}
+                  srcSet={`${image.person2Webp} 1x, ${image.person2Webp2x} 2x`}
                 />
                 <img
                   className={s.team__img}
@@ -187,10 +187,10 @@ export const Team = () => {
             <div className={s.team__card}>
               <picture>
                 <source
-                  srcSet={`${image.person3Jpg}1x, ${image.person3Jpg2x} 2x`}
+                  srcSet={`${image.person3Jpg} 1x, ${image.person3Jpg2x} 2x`}
                 />
                 <source
-                  srcSet={`${image.person3Webp}1x, ${image.person3Webp2x} 2x`}
+                  srcSet={`${image.person3Webp} 1x, ${image.person3Webp2x} 2x`}
                 />
                 <img
                   className={s.team__img}
