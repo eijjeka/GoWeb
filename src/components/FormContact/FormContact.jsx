@@ -1,12 +1,23 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { useState } from "react";
 import { Error } from "components/Error";
 import s from "./FormContact.module.scss";
+import ModalForm from "components/ModalForm/ModalForm";
 
 export const FormContact = () => {
+  const [openModal, setOpenModal] = useState(false);
+
+  const isOpen = () => {
+    setOpenModal(!openModal);
+  };
+
   return (
     <div>
       <Formik
-        initialValues={{ name: "", email: "" }}
+        initialValues={{
+          name: "",
+          email: "",
+        }}
         validate={(values) => {
           const errors = {};
           if (!values.email) {
@@ -19,15 +30,13 @@ export const FormContact = () => {
           return errors;
         }}
         onSubmit={(values, { setSubmitting, resetForm }) => {
-          // setTimeout(() => {
-          //   alert(JSON.stringify(values, null, 2));
+          isOpen();
           setSubmitting(false);
-          // }, 400);
           resetForm();
         }}
       >
         {({ isSubmitting }) => (
-          <Form className={s.form} action="POST" data-netlify="true" netlify>
+          <Form className={s.form}>
             <Field
               className={s.form__input}
               type="name"
@@ -48,6 +57,8 @@ export const FormContact = () => {
           </Form>
         )}
       </Formik>
+
+      {openModal && <ModalForm onClose={isOpen} />}
     </div>
   );
 };
