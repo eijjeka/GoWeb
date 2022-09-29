@@ -3,7 +3,7 @@
   flex-direction: column;
   color: #fff;
 
-  &Img {
+  &__img {
     display: block;
     width: 100%;
     object-fit: cover;
@@ -37,7 +37,7 @@
     padding: 62px 32px;
   }
 
-  &PreTitle {
+  &__preTitle {
     margin-bottom: 16px;
 
     @media screen and (min-width: 768px) {
@@ -46,10 +46,10 @@
     }
   }
 
-  &Title {
+  &__title {
     font-weight: 400;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 1.37;
     margin-bottom: 24px;
 
     @media screen and (min-width: 768px) {
@@ -58,7 +58,7 @@
     }
   }
 
-  &Text {
+  &__text {
     margin-bottom: 24px;
 
     @media screen and (min-width: 768px) {
@@ -67,7 +67,7 @@
     }
   }
 
-  &Button {
+  &__button {
     width: 146px;
     height: 54px;
     display: inline-block;

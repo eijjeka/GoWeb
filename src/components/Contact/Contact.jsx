@@ -1,20 +1,18 @@
 import { FormContact } from "components/FormContact";
-import * as imgExports from "./imgExports";
+import { images } from "./imgExports";
 import s from "./Contact.module.scss";
 
 export const Contact = () => {
   return (
     <section className={s.contact} id="contact">
       <picture>
+        <source srcSet={`${images.contactJpg} 1x, ${images.contactJpg2x} 2x`} />
         <source
-          srcSet={`${imgExports.image.contactJpg} 1x, ${imgExports.image.contactJpg2x} 2x`}
-        />
-        <source
-          srcSet={`${imgExports.image.contactWebp} 1x, ${imgExports.image.contactWebpp2x} 2x`}
+          srcSet={`${images.contactWebp} 1x, ${images.contactWebpp2x} 2x`}
         />
         <img
           className={s.contact__img}
-          src={imgExports.image.contactJpg}
+          src={images.contactJpg}
           alt="man working on the laptop"
         />
       </picture>

@@ -6,12 +6,12 @@ import "react-image-lightbox/style.css";
 import s from "./Cases.module.scss";
 
 const images = [
-  image.cases1jpg,
-  image.cases2jpg,
-  image.cases3jpg,
-  image.cases4jpg,
-  image.cases5jpg,
-  image.cases6jpg,
+  image.cases1jpg2x,
+  image.cases2jpg2x,
+  image.cases3jpg2x,
+  image.cases4jpg2x,
+  image.cases5jpg2x,
+  image.cases6jpg2x,
 ];
 
 export const Cases = () => {

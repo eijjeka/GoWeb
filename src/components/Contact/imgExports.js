@@ -3,7 +3,7 @@ import contactWebpp2x from "images/home/contact@2x.webp";
 import contactJpg from "images/home/contact.jpg";
 import contactJpg2x from "images/home/contact@2x.jpg";
 
-export const image = {
+export const images = {
   contactWebp,
   contactWebpp2x,
   contactJpg,

@@ -24,17 +24,17 @@
     padding-bottom: 378px;
   }
 
-  &Container {
+  &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  &Title {
+  &__title {
     font-weight: 600;
     font-size: 40px;
-    line-height: 54px;
+    line-height: 1.35;
     text-align: center;
     color: #ffffff;
     padding: 0 20px;
@@ -46,7 +46,7 @@
     }
   }
 
-  &PreTitle {
+  &__preTitle {
     font-size: 26px;
     line-height: 32px;
     text-align: center;
@@ -60,7 +60,7 @@
     }
   }
 
-  &Button {
+  &__button {
     display: flex;
     cursor: pointer;
     padding: 16px 32px;
