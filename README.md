@@ -4,4 +4,4 @@
 
 2)![preview](./public/2.png)
 
-2)![preview](./public/3.png)
+3)![preview](./public/3.png)
